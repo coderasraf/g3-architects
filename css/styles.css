@@ -10,6 +10,9 @@ a{
 p{
     color: #727272;
 }
+h1,h2,h3,h4,h5,h6{
+    color: #131313;
+}
 .page-width{
     max-width: 1399px;
     margin: 0 auto;
@@ -144,4 +147,208 @@ margin-bottom: 20px;
 .featured-text-right{
     padding: 0 70px;
     max-width: 500px;
+}
+
+/* ====== section featured area ======== */
+.featured-two-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+.style-heading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+.style-heading::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    content: "";
+    background-color: #FF900E;
+}
+.featured-two-title{
+    margin-bottom: 30px;
+}
+.single-featured-block-item{
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+.single-featured-block-item h2{
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+margin-bottom: 5px;
+}
+.single-featured-block-item p{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px
+}
+.featured-image-wrapper2{
+    position: relative;
+}
+.absolute-button-text{
+    position: absolute;
+    bottom: 0;
+}
+@media(max-width:768px){
+    .featured-two-inner{
+        display: block;
+    }
+}
+
+/* some facts css */
+.section-title p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 10px 0;
+}
+.facts-main-inner .section-title{
+    max-width: 500px;
+}
+.main-facts-items-inner{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    column-gap: 50px;
+    row-gap: 30px;
+    margin-top: 50px;
+}
+.single-facts-item h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    margin: 14px 0;
+}
+
+.single-facts-item {
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8PX;
+    padding: 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    transition: .4s ease-in-out;
+    transform: scale(1);
+}
+.single-facts-item:hover{
+    transform: scale(1.1);
+}
+
+
+.our-sponspors  .section-title {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.company-logos-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 37px;
+}
+
+footer.footer {
+    background: #FFF4E7;
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+@media(min-width:991px){
+    .featured-text-left2 {
+        padding-right: 80px;
+    }
+    .single-featured-block-item {
+        margin-bottom: 30px;
+        padding: 25px;
+    }
+}
+
+@media(max-width:768px){
+    .absolute-button-text{
+        left: 0 !important;
+    }
+    .header-inner{
+        flex-direction: column;
+    }
+    .main-top-text h1 {
+        font-size: 38px;
+        line-height: 41px;
+    }
+    .main-menu{
+        margin-top: 7px;
+    }
+    .header-logo a h2 {
+        font-size: 29px;
+        margin-top: 15px;
+    }
+    .main-top-text{
+        padding-top: 50px;
+    }
+    .featured-inner{
+        flex-direction: column;
+    }
+    .featured-text-right {
+        padding: 20px 0;
+    }
+    .company-logos-area {
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+section.our-sponspors.section-padding {
+    padding-bottom: 100px;
+}
+.absolute-button-text {
+    position: absolute;
+    bottom: 0;
+    background: #FF900E;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    padding: 30px;
+    bottom: -6px;
+    left: -85px;
+}
+.featured-image-wrapper2 img {
+    width: 100%;
+}
+
+p.big-text {
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+}
+
+.absolute-button-text p {
+    font-size: 25px;
+    line-height: 40px;
+    color:#fff;
+    margin:0;
+}
+
+
+p.big-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
 }
